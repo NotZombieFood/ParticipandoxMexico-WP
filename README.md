@@ -1,3 +1,6 @@
+# ¿Qué es?
+Puedes instalar este wordpress theme en conjunto con custom fields pro para poder registrar colectivos y acs de todo el país.
+
 # ¿Cómo correrlo localmente?
 ## [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
