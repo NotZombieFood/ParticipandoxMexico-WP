@@ -27,7 +27,44 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
+        var Data = [];
+
+        function getData() {
+          console.log('running...');
+          $('.objetos').each(function(i, obj) {
+            var logo = $(this).data("logo");
+            var imagen = $(this).data("imagen");
+            var categoria = $(this).data("categoria");
+            var nombre = $(this).data("nombre");
+            var descripcion = $(this).data("descripcion");
+            var facebook = $(this).data("facebook");
+            var sitioweb = $(this).data("sitioweb");
+            var ciudad = $(this).data("ciudad");
+            var estado = $(this).data("estado");
+            var subarray = [nombre, descripcion, categoria, ciudad, estado, facebook, sitioweb, logo, imagen];
+            Data.push(subarray);
+          });
+          
+        }
+        
+       console.log('wu');
+       getData();
+       console.log(Data);
+        function loadInfo(estado){
+          $('#informacion').fadeOut(function() {
+            $('#informacion').html('<h1>'+estado+'</h1>');
+            $('#informacion').fadeIn();
+          });
+        }
+
+        $('[data-toggle="tooltip"]').tooltip();
+        $('.land').click(function(event) {
+          var estado = $(this).data("title");
+          console.log(estado);
+          $('.land').removeClass('active');
+          $(this).addClass( "active" );
+          loadInfo(estado);
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

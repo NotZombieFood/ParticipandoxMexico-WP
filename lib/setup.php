@@ -85,6 +85,22 @@ function display_sidebar() {
     // @link https://codex.wordpress.org/Conditional_Tags
     is_404(),
     is_front_page(),
+    is_home(), //Para el blog
+    is_single(),
+    is_page('inicio'),
+    is_page('contacto'),
+    is_page('amenidades'),
+    is_page('bienestar'),
+    is_page('andares-campus-corporativo'),
+    is_page('contacto'),
+    is_page('andares-corporativo-acueducto'),
+    is_page('corporativo-paseo'),
+    is_page('andares-corporativo-patria'),
+    is_page('andares-corporativo-paseo'),
+    is_page('entorno'),
+    is_page('corporativos'),
+    is_page('soluciones-para-tu-empresa'),
+    is_page('ubicacion'),
     is_page_template('template-custom.php'),
   ]);
 

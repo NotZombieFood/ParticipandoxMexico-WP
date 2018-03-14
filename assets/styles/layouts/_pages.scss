@@ -1,0 +1,45 @@
+.land {
+  fill: #CCCCCC;
+  fill-opacity: 1;
+  stroke: white;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+  transition: all 1s;
+}
+
+#mapa{
+	height: 100vh;
+}
+.land:hover{
+	fill:#454545;
+}
+.active{
+	fill:#404040;
+}
+
+.magic-centering{
+	display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.informacion-entrada{
+	padding-left: 50px;
+}
+
+.padR{padding-right: 50px;}
+.informacion-entrada h1{
+	font-weight: $bold;
+	margin-top: 60px;
+}
+
+.informacion-entrada h2{
+	font-size: 18px;
+	font-weight: $light;
+}
+
+.informacion-entrada hr{
+	border: 2px solid #404040;
+	width: 45%;
+	text-align: left;
+	margin: 20px 0px;
+}
