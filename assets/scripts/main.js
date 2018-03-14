@@ -46,11 +46,31 @@
           });
           
         }
-        
+
        console.log('wu');
        getData();
        console.log(Data);
+
         function loadInfo(estado){
+          var textoMovilidad;
+          var textoDerechosCiviles;
+          var textoMedioAmbiente;
+          var textoOtros;
+          for (var i = 0; i < Data.length; i++) {
+            if (Data[i][4]===estado){
+              if(Data[i][2]==='movilidad'){
+
+              }else if(Data[i][2]==='medio-ambiente'){
+
+              } else if(Data[i][2]==='derechos-civiles'){
+
+              } else if(Data[i][2]==='otros'){
+                  
+              } else {
+                console.log("error en categoria");
+              }
+            }
+          }
           $('#informacion').fadeOut(function() {
             $('#informacion').html('<h1>'+estado+'</h1>');
             $('#informacion').fadeIn();

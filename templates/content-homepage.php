@@ -3,12 +3,174 @@
 		<div class="row">
 			<div class="col-md-4 ">
 				<div id="informacion">
-					<div class="informacion-entrada">
-					<h1>¡Hola!</h1>
-					<h2>Con este mapa podrás conocer que asociaciones civiles, colectivos o otro tipo de propuestas ciudadanas a las que te puedes sumar en tu ciudad.</h2>
-					<hr>
-					<h4>¡Solo toca tu estado!</h4>
-					</div>
+					<div id="menuServicios">
+           <div class="panel-group" id="accordion">
+  <div class="panel panel-default panel-servicios">
+    <div class="panel-heading ">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+ <img class="logoServicios" src="<?php echo get_template_directory_uri(); ?>/dist/images/earth-day.png" /> Medio Ambiente</a>      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://image.flaticon.com/icons/png/512/355/355400.png">
+				</div>
+				<div class="col-md-9">
+					<h1>Titulo</h1>
+			        <h2>Ciudad,Estado</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident sequi vel, aperiam, nisi officia ipsam odit, hic corporis ad id amet accusamus, labore animi ratione quo laborum a voluptas.</p>
+			        <a href=""><i class="fab fa-facebook-square"></i></a>
+			        <a href=""><i class="fas fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default panel-servicios">
+    <div class="panel-heading ">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+ <img class="logoServicios" src="<?php echo get_template_directory_uri(); ?>/dist/images/bicycle.png" /> Movilidad</a>      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://image.flaticon.com/icons/png/512/355/355400.png">
+				</div>
+				<div class="col-md-9">
+					<h1>Titulo</h1>
+			        <h2>Ciudad,Estado</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident sequi vel, aperiam, nisi officia ipsam odit, hic corporis ad id amet accusamus, labore animi ratione quo laborum a voluptas.</p>
+			        <a href=""><i class="fab fa-facebook-square"></i></a>
+			        <a href=""><i class="fas fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+      </div>
+      <div class="panel-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://image.flaticon.com/icons/png/512/355/355400.png">
+				</div>
+				<div class="col-md-9">
+					<h1>Titulo</h1>
+			        <h2>Ciudad,Estado</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident sequi vel, aperiam, nisi officia ipsam odit, hic corporis ad id amet accusamus, labore animi ratione quo laborum a voluptas.</p>
+			        <a href=""><i class="fab fa-facebook-square"></i></a>
+			        <a href=""><i class="fas fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+      </div>
+      <div class="panel-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://image.flaticon.com/icons/png/512/355/355400.png">
+				</div>
+				<div class="col-md-9">
+					<h1>Titulo</h1>
+			        <h2>Ciudad,Estado</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident sequi vel, aperiam, nisi officia ipsam odit, hic corporis ad id amet accusamus, labore animi ratione quo laborum a voluptas.</p>
+			        <a href=""><i class="fab fa-facebook-square"></i></a>
+			        <a href=""><i class="fas fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default panel-servicios">
+    <div class="panel-heading ">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+ <img class="logoServicios" src="<?php echo get_template_directory_uri(); ?>/dist/images/teamwork.png" /> Derechos Civiles</a>      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://image.flaticon.com/icons/png/512/355/355400.png">
+				</div>
+				<div class="col-md-9">
+					<h1>Titulo</h1>
+			        <h2>Ciudad,Estado</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident sequi vel, aperiam, nisi officia ipsam odit, hic corporis ad id amet accusamus, labore animi ratione quo laborum a voluptas.</p>
+			        <a href=""><i class="fab fa-facebook-square"></i></a>
+			        <a href=""><i class="fas fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+      </div>
+      <div class="panel-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://image.flaticon.com/icons/png/512/355/355400.png">
+				</div>
+				<div class="col-md-9">
+					<h1>Titulo</h1>
+			        <h2>Ciudad,Estado</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident sequi vel, aperiam, nisi officia ipsam odit, hic corporis ad id amet accusamus, labore animi ratione quo laborum a voluptas.</p>
+			        <a href=""><i class="fab fa-facebook-square"></i></a>
+			        <a href=""><i class="fas fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default panel-servicios">
+    <div class="panel-heading ">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+ <img class="logoServicios" src="<?php echo get_template_directory_uri(); ?>/dist/images/packing.png" /> Otros</a>      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://image.flaticon.com/icons/png/512/355/355400.png">
+				</div>
+				<div class="col-md-9">
+					<h1>Titulo</h1>
+			        <h2>Ciudad,Estado</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident sequi vel, aperiam, nisi officia ipsam odit, hic corporis ad id amet accusamus, labore animi ratione quo laborum a voluptas.</p>
+			        <a href=""><i class="fab fa-facebook-square"></i></a>
+			        <a href=""><i class="fas fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+      </div>
+      <div class="panel-body">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://image.flaticon.com/icons/png/512/355/355400.png">
+				</div>
+				<div class="col-md-9">
+					<h1>Titulo</h1>
+			        <h2>Ciudad,Estado</h2>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem provident sequi vel, aperiam, nisi officia ipsam odit, hic corporis ad id amet accusamus, labore animi ratione quo laborum a voluptas.</p>
+			        <a href=""><i class="fab fa-facebook-square"></i></a>
+			        <a href=""><i class="fas fa-globe"></i></a>
+				</div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+         </div>
 				</div>
 			</div>
 			<div class="col-md-8 padR">
