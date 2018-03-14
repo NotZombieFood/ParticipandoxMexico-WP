@@ -1,4 +1,5 @@
-# [Sage](https://roots.io/sage/)
+# ¿Cómo correrlo localmente?
+## [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
@@ -11,7 +12,7 @@ Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and B
 * Newsletter: [Subscribe](http://roots.io/subscribe/)
 * Forum: [https://discourse.roots.io/](https://discourse.roots.io/)
 
-## Requirements
+### Requirements
 
 | Prerequisite    | How to check | How to install
 | --------------- | ------------ | ------------- |
@@ -34,37 +35,9 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 * Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
 * [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
 
-Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
-
-* Cleaner output of `wp_head` and enqueued assets
-* Cleaner HTML output of navigation menus
-* Root relative URLs
-* Nice search (`/search/query/`)
-* Google CDN jQuery snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
-* Google Analytics snippet from [HTML5 Boilerplate](http://html5boilerplate.com/)
-
-See a complete working example in the [roots-example-project.com repo](https://github.com/roots/roots-example-project.com).
-
 ## Theme installation
 
-Install Sage by copying the project into a new folder within your WordPress themes directory.
-
-Make sure [Composer](https://getcomposer.org/download/) has been installed before moving on.
-
-Install Sage using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
-
-```shell
-# @ example.com/site/web/app/themes/
-$ composer create-project roots/sage your-theme-name 8.5.0
-```
-
-## Theme setup
-
-Edit `lib/setup.php` to enable or disable theme features, setup navigation menus, post thumbnail sizes, post formats, and sidebars.
-
-## Theme development
-
-Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
+Install by copying the project into a new folder within your WordPress themes directory.
 
 ### Install gulp and Bower
 
@@ -104,21 +77,3 @@ If your local development URL looks like `http://localhost:8888/project-name/` y
   }
 ...
 ```
-
-## Documentation
-
-Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
-
-## Contributing
-
-Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
-
-## Community
-
-Keep track of development and community news.
-
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
-* Listen to the [Roots Radio podcast](https://roots.io/podcast/)
