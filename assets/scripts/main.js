@@ -52,15 +52,15 @@
         console.log(Data);
 
         function loadInfo(estado) {
-          var textoMovilidad = '</div> </div><div class="panel panel-default panel-servicios"> <div class="panel-heading "> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <img class="logoServicios" src="http://localhost/wp-content/themes/placeholdernameForMapaWP/dist/images/bicycle.png" /> Movilidad</a>      </h4> </div> <div id="collapse2" class="panel-collapse collapse">';
-          var textoDerechosCiviles = '</div> </div> <div class="panel panel-default panel-servicios"> <div class="panel-heading "> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> <img class="logoServicios" src="http://localhost/wp-content/themes/placeholdernameForMapaWP/dist/images/teamwork.png" /> Derechos Civiles</a>      </h4> </div> <div id="collapse3" class="panel-collapse collapse">';
-          var textoMedioAmbiente = '<div id="menuServicios"><div class="panel-group" id="accordion"> <div class="panel panel-default panel-servicios"> <div class="panel-heading "> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <img class="logoServicios" src="http://localhost/wp-content/themes/placeholdernameForMapaWP/dist/images/earth-day.png" /> Medio Ambiente</a>      </h4> </div> <div id="collapse1" class="panel-collapse collapse">';
-          var textoOtros = '</div> </div> <div class="panel panel-default panel-servicios"> <div class="panel-heading "> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"> <img class="logoServicios" src="http://localhost/wp-content/themes/placeholdernameForMapaWP/dist/images/packing.png" /> Otros</a>      </h4> </div> <div id="collapse4" class="panel-collapse collapse">';
+          var textoMovilidad = '</div> </div><div class="panel panel-default panel-servicios"> <div class="panel-heading "> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"> <img class="logoServicios" src="http://mapa.southcentralus.cloudapp.azure.com/wp-content/themes/mapa-theme/dist/images/bicycle.png" /> Movilidad</a>      </h4> </div> <div id="collapse2" class="panel-collapse collapse">';
+          var textoDerechosCiviles = '</div> </div> <div class="panel panel-default panel-servicios"> <div class="panel-heading "> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"> <img class="logoServicios" src="http://mapa.southcentralus.cloudapp.azure.com/wp-content/themes/mapa-theme/dist/images/teamwork.png" /> Derechos Civiles</a>      </h4> </div> <div id="collapse3" class="panel-collapse collapse">';
+          var textoMedioAmbiente = '<div id="menuServicios"><div class="panel-group" id="accordion"> <div class="panel panel-default panel-servicios"> <div class="panel-heading "> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"> <img class="logoServicios" src="http://mapa.southcentralus.cloudapp.azure.com/wp-content/themes/mapa-theme/dist/images/earth-day.png" /> Medio Ambiente</a>      </h4> </div> <div id="collapse1" class="panel-collapse collapse">';
+          var textoOtros = '</div> </div> <div class="panel panel-default panel-servicios"> <div class="panel-heading "> <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"> <img class="logoServicios" src="http://mapa.southcentralus.cloudapp.azure.com/wp-content/themes/mapa-theme/dist/images/packing.png" /> Otros</a>      </h4> </div> <div id="collapse4" class="panel-collapse collapse">';
           var end = '</div></div></div>';
           for (var i = 0; i < Data.length; i++) {
             if (Data[i][4] === (estado + ' ')) {
               if (Data[i][2] === 'movilidad ') {
-                textoMovilidad += '<div class="panel-body"> <div class="container"> <div class="row"> <div class="col-md-3"> <img src="'+  Data[i][7] + ' "> </div> <div class="col-md-9"> <h1>' + Data[i][0] + '</h1> <h2>' + Data[i][3] + ',' + Data[i][4] + '</h2> <p>' + Data[i][4] + '</p>';
+                textoMovilidad += '<div class="panel-body"> <div class="container"> <div class="row"> <div class="col-md-3"> <img src="' + Data[i][7] + ' "> </div> <div class="col-md-9"> <h1>' + Data[i][0] + '</h1> <h2>' + Data[i][3] + ',' + Data[i][4] + '</h2> <p>' + Data[i][4] + '</p>';
                 if (!(Data[i][5] === '' || Data[i][5] === ' ')) {
                   textoMovilidad += '<a href="' + Data[i][5] + '"><i class="fab fa-facebook-square"></i></a>';
                 }
@@ -69,25 +69,25 @@
                 }
                 textoMovilidad += ' </div> </div> </div> </div>';
               } else if (Data[i][2] === 'medio-ambiente ') {
-                textoMedioAmbiente += '<div class="panel-body"> <div class="container"> <div class="row"> <div class="col-md-3"> <img src="'+  Data[i][7] + ' "> </div> <div class="col-md-9"> <h1>' + Data[i][0] + '</h1> <h2>' + Data[i][3] + ',' + Data[i][4] + '</h2> <p>' + Data[i][4] + '</p>';
-               if (!(Data[i][5] === '' || Data[i][5] === ' ')) {
+                textoMedioAmbiente += '<div class="panel-body"> <div class="container"> <div class="row"> <div class="col-md-3"> <img src="' + Data[i][7] + ' "> </div> <div class="col-md-9"> <h1>' + Data[i][0] + '</h1> <h2>' + Data[i][3] + ',' + Data[i][4] + '</h2> <p>' + Data[i][4] + '</p>';
+                if (!(Data[i][5] === '' || Data[i][5] === ' ')) {
                   textoMedioAmbiente += '<a href="' + Data[i][5] + '"><i class="fab fa-facebook-square"></i></a>';
                 }
-                if (!(Data[i][6] === '' || Data[i][6] === ' '))  {
+                if (!(Data[i][6] === '' || Data[i][6] === ' ')) {
                   textoMedioAmbiente += '<a href="' + Data[i][6] + '"><i class="fas fa-globe"></i></a>';
                 }
                 textoMedioAmbiente += ' </div> </div> </div> </div>';
               } else if (Data[i][2] === 'derechos-civiles ') {
-                textoDerechosCiviles += '<div class="panel-body"> <div class="container"> <div class="row"> <div class="col-md-3"> <img src="'+  Data[i][7] + ' "> </div> <div class="col-md-9"> <h1>' + Data[i][0] + '</h1> <h2>' + Data[i][3] + ',' + Data[i][4] + '</h2> <p>' + Data[i][4] + '</p>';
-               if (!(Data[i][5] === '' || Data[i][5] === ' ')) {
+                textoDerechosCiviles += '<div class="panel-body"> <div class="container"> <div class="row"> <div class="col-md-3"> <img src="' + Data[i][7] + ' "> </div> <div class="col-md-9"> <h1>' + Data[i][0] + '</h1> <h2>' + Data[i][3] + ',' + Data[i][4] + '</h2> <p>' + Data[i][4] + '</p>';
+                if (!(Data[i][5] === '' || Data[i][5] === ' ')) {
                   textoDerechosCiviles += '<a href="' + Data[i][5] + '"><i class="fab fa-facebook-square"></i></a>';
                 }
-                if (!(Data[i][6] === '' || Data[i][6] === ' ') )  {
+                if (!(Data[i][6] === '' || Data[i][6] === ' ')) {
                   textoDerechosCiviles += '<a href="' + Data[i][6] + '"><i class="fas fa-globe"></i></a>';
                 }
                 textoDerechosCiviles += ' </div> </div> </div> </div>';
               } else if (Data[i][2] === 'otros ') {
-                textoOtros += '<div class="panel-body"> <div class="container"> <div class="row"> <div class="col-md-3"> <img src="'+  Data[i][7] + ' "> </div> <div class="col-md-9"> <h1>' + Data[i][0] + '</h1> <h2>' + Data[i][3] + ',' + Data[i][4] + '</h2> <p>' + Data[i][4] + '</p>';
+                textoOtros += '<div class="panel-body"> <div class="container"> <div class="row"> <div class="col-md-3"> <img src="' + Data[i][7] + ' "> </div> <div class="col-md-9"> <h1>' + Data[i][0] + '</h1> <h2>' + Data[i][3] + ',' + Data[i][4] + '</h2> <p>' + Data[i][4] + '</p>';
                 if (!(Data[i][5] === '' || Data[i][5] === ' ')) {
                   textoOtros += '<a href="' + Data[i][5] + '"><i class="fab fa-facebook-square"></i></a>';
                 }
@@ -121,9 +121,44 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'tuiteapreview': {
       init: function() {
         // JavaScript to be fired on the about us page
+        var tweet = $('#tweet_text').text();
+        $(document).ready(function() {
+          $("#myTable").tablesorter();
+        });
+        $('.twitter-icon').each(function(i, obj) {
+            var username = $(this).data( "handle" );
+            var tweet_completo = username + ' ' + tweet;
+            var encoded_tweet = encodeURIComponent(tweet_completo);
+            var url_tweet = 'https://twitter.com/intent/tweet?url=null&text=.%40' + encoded_tweet;
+            $(this).attr("href", url_tweet);
+        });
+        $('.logo-partido').each(function(i, obj) {
+            var partido = $(this).attr( "alt" );
+            var imagen;
+            if (partido === 'PRI'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PRI_logo_Mexico.png';
+            } else if (partido ==='PAN'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PAN_logo_Mexico.png';
+            } else if (partido === 'PRD'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PRD_logo_Mexico.png';
+            } else if (partido === 'PT'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PT_logo_Mexico.png';
+            } else if (partido === 'MORENA'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/Morena.png';
+            } else if (partido === 'PNA'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PNA_logo_Mexico.png';
+            } else if (partido === 'PES'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PES_logo_Mexico.png';
+            } else if (partido === 'MC'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/MC_Party_Mexico.png';
+            } else if (partido==='PV'){
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PVE_logo_Mexico.png';
+            }
+            $(this).attr("src", imagen);
+        });
       }
     }
   };

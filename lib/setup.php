@@ -101,6 +101,7 @@ function display_sidebar() {
     is_page('corporativos'),
     is_page('soluciones-para-tu-empresa'),
     is_page('ubicacion'),
+    is_page('tuiteapreview'),
     is_page_template('template-custom.php'),
   ]);
 

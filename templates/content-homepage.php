@@ -52,7 +52,7 @@
 		</div>
 	</div>
 </section>
-<div style="display: hidden;">
+<div style="display: none;">
 <?php if(have_rows('registros')):
    while(have_rows('registros')): the_row(); ?>
    	<div class="objetos" data-nombre="<?php the_sub_field("nombre");?>" data-descripcion="<?php the_sub_field("descripcion"); ?>" data-facebook="<?php the_sub_field("facebook"); ?>" data-sitioweb="<?php the_sub_field("sitio_web"); ?> " data-ciudad="<?php the_sub_field("ciudad"); ?> " data-estado="<?php the_sub_field("estado"); ?> " data-logo="<?php $image = get_sub_field('logo'); echo $image['url']; ?>" data-imagen="<?php $image = get_sub_field('imagen');echo $image['url'];?>  "  data-categoria="<?php the_sub_field("categoria"); ?> "> </div>

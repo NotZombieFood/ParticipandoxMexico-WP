@@ -7,141 +7,221 @@
   transition: all 1s;
 }
 
-#mapa{
-	height: 100vh;
-}
-.land:hover{
-	fill:#454545;
-}
-.active{
-	fill:#404040;
+#mapa {
+  height: 100vh;
 }
 
-.magic-centering{
-	display: flex;
-	 justify-content: center;
-  align-items: center; 
-}
-.informacion-entrada{
-	padding-left: 50px;
+.land:hover {
+  fill: #454545;
 }
 
-.padR{padding-right: 50px;}
-.informacion-entrada h1{
-	font-weight: $bold;
-	margin-top: 60px;
+.active {
+  fill: #404040;
 }
 
-.informacion-entrada h2{
-	font-size: 18px;
-	font-weight: $light;
+.magic-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.informacion-entrada hr{
-	border: 2px solid #404040;
-	width: 45%;
-	text-align: left;
-	margin: 20px 0px;
+.informacion-entrada {
+  padding-left: 50px;
+}
+
+.padR {
+  padding-right: 50px;
+}
+
+.informacion-entrada h1 {
+  font-weight: $bold;
+  margin-top: 60px;
+}
+
+.informacion-entrada h2 {
+  font-size: 18px;
+  font-weight: $light;
+}
+
+.informacion-entrada hr {
+  border: 2px solid #404040;
+  width: 45%;
+  text-align: left;
+  margin: 20px 0px;
 }
 
 #menuServicios {
-    width: 100%;
-    background-color: rgba(0,0,0,.7);
-    z-index: 10;
-    height: 100vh;
-    overflow-y: scroll;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 10;
+  height: 100vh;
+  overflow-y: scroll;
 }
-body{
-	overflow: hidden;
-}
+
 .panel-servicios {
-    margin: 0px !important;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    border-radius: 0px !important;
+  margin: 0px !important;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 0px !important;
 }
 
 .panel-heading {
-    background-color:#404040;
-    border-radius: 0px !important;
-    border: 1px solid #454545;
-    line-height: 35px;
-    height: 70px;
-    transition: all 1s;
+  background-color: #404040;
+  border-radius: 0px !important;
+  border: 1px solid #454545;
+  line-height: 35px;
+  height: 70px;
+  transition: all 1s;
 }
+
 .panel-heading:hover {
-    background-color: darken(#404040,10%);
+  background-color: darken(#404040, 10%);
 }
-.panel-heading a{
-   display: block;
+
+.panel-heading a {
+  display: block;
 }
-.panel-heading a:hover{
-	text-decoration: none;
+
+.panel-heading a:hover {
+  text-decoration: none;
 }
+
 .panel-collapse {
-    background-color: rgba(0, 0, 0, 0) !important;
-    color: white;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: white;
 }
 
 .panel-body {
-    color: white;
-    border: none !important;
-    transition: all 1s;
-    padding: 15px 0px;
+  color: white;
+  border: none !important;
+  transition: all 1s;
+  padding: 15px 0px;
 }
 
 .panel-body span {
-    color: white;
-    font-size: 19px;
-    margin-right: 10px;
-    padding: 3px;
+  color: white;
+  font-size: 19px;
+  margin-right: 10px;
+  padding: 3px;
 }
+
 .panel-body h1 {
-    color: white;
-    font-size: 26px;
-    margin: 0px;
-    font-weight: normal;
+  color: white;
+  font-size: 26px;
+  margin: 0px;
+  font-weight: normal;
 }
-.panel-body h2{
-	color: #B8B8B8;
-	font-size: 20px;
+
+.panel-body h2 {
+  color: #B8B8B8;
+  font-size: 20px;
 }
-.panel-body img{
-	    width: 75%;
-    margin-top: 25%;
-    margin-left: 25%;
+
+.panel-body img {
+  width: 75%;
+  margin-top: 25%;
+  margin-left: 25%;
 }
+
 .panel-title {
-    color: #fff;
-    font-size: 22px;
-    width: 100%;
-    font-weight: 300;
-    height: 70px;
-    line-height: 70px;
+  color: #fff;
+  font-size: 22px;
+  width: 100%;
+  font-weight: 300;
+  height: 70px;
+  line-height: 70px;
 }
 
-.panel-title a{
-	color: white !important;
-	text-decoration: none !important;
-	padding-left: 25px;
+.panel-title a {
+  color: white !important;
+  text-decoration: none !important;
+  padding-left: 25px;
 }
-.panel-body a{
-	color: white;
-	margin-right: 5px;
-	transition: all 1s;
+
+.panel-body a {
+  color: white;
+  margin-right: 5px;
+  transition: all 1s;
 }
-.panel-body a:hover{
-	color: #7D79D4;
-	text-decoration: none;
+
+.panel-body a:hover {
+  color: #7D79D4;
+  text-decoration: none;
 }
+
 .panel-body p {
-    color: #d8d8d8;
-    font-size: 14px;
-    margin: 2px 0px;
+  color: #d8d8d8;
+  font-size: 14px;
+  margin: 2px 0px;
 }
 
 
-.logoServicios{
-    height: 40px;
-    margin-right: 10px;
+.logoServicios {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-partido {
+  width: 35px;
+  padding: 10px 0px;
+}
+
+
+#tweet {
+  padding: 70px 0px;
+}
+#tweet th{
+    background-color: #404040;
+    color: white;
+    font-size: $light;
+}
+#tweet h3 {
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 30px;
+  font-weight: $light;
+}
+
+#tweet h1 {}
+
+#tweet p {
+  font-size: 20px;
+  font-weight: $thin;
+}
+
+#tweet th {
+  text-align: center;
+  padding: 5px 20px;
+}
+
+#tweet td {
+  text-align: center;
+}
+
+.bordertop-gris {
+  border-top: 1px solid #404040;
+}
+
+#myTable {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#tweet a{
+    color: #404040;
+    transition: all 1s;
+}
+
+#tweet a:hover{
+    color: #1B95E0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .table-responsive-mobile {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
 }

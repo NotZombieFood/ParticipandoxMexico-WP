@@ -1,5 +1,9 @@
 <footer class="content-info">
   <div class="container">
-    <?php dynamic_sidebar('sidebar-footer'); ?>
+    <div class="row">
+    	<div class="col-md-12 center">
+    		
+    	</div>
+    </div>
   </div>
 </footer>
