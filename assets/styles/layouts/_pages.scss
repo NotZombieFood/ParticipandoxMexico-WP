@@ -279,7 +279,7 @@
     height: 565px;
 }
 
-.proyectos a,input[type="submit"]{
+.proyectos a,input[type="submit"],.archive-posts-singles a{
     text-align: center;
     padding: 15px 30px;
     border: 1px solid #f2f2f2;
@@ -289,7 +289,7 @@
     margin: 20px auto;
     background-color: rgba(0,0,0,0);
 }
-.proyectos a:hover,input[type="submit"]:hover{
+.proyectos a:hover,input[type="submit"]:hover,.archive-posts-singles a:hover{
     background-color:  #f2f2f2;
     color: #292929;
     text-decoration: none;
@@ -309,15 +309,15 @@
 }
 
 
-#cta_home{
+#cta_home,#tuitea-archive-titulo{
     padding: 60px 150px;
 }
 
-#cta_home h1{
+#cta_home h1,#tuitea-archive-titulo h1{
     font-size: 25px;
 }
 
-#cta_home h2{
+#cta_home h2,#tuitea-archive-titulo h2{
     font-size: 18px;
 }
 
@@ -344,6 +344,17 @@
 .box_contacto{
     padding: 30px 25px;
     background-color: #292929;
+}
+
+#tuits-archive-posts{
+    background-color:  #292929;
+}
+.archive-posts-singles{
+    margin: 20px 10px;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
+    color: white;
+    height: 350px;
 }
 .box_contacto h1{
     color: white;
@@ -403,7 +414,7 @@ textarea{
     padding: 25px;
     height: unset;
 }
-#cta_home {
+#cta_home, #tuitea-archive-titulo {
     padding: 60px 30px;
 }
 .informacion-entrada {
