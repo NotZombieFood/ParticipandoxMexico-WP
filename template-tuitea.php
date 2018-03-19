@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Tuitea
+ * Template Post Type: single-tuitea
  */
 ?>
 

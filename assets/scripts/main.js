@@ -18,40 +18,7 @@
     // All pages
     'common': {
       init: function() {
-        var a;
         console.log("active common");
-
-        function loop(a) {
-          console.log('loop');
-          $("#cta_hero").html(a);
-        }
-        loop();
-        setInterval(function() {
-          loop(a);
-        }, 500);
-        var counter = 0;
-
-        function controller() {
-          console.log(counter);
-          counter++;
-          if (counter < 3) {
-            a = 'ayudar';
-          } else if (counter < 6) {
-            a = 'colaborar';
-          } else if (counter < 9) {
-            a = 'unirse';
-          } else {
-            counter = 0;
-          }
-        }
-
-        function createInterval(controller, interval) {
-          setInterval(function() {
-            controller();
-          }, interval);
-        }
-        createInterval(controller, 500);
-
 
         // JavaScript to be fired on all pages
         $("#menu-close").click(function(e) {
@@ -67,7 +34,54 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
-    // Home page
+    'home': {
+      init: function() {
+        var a;
+        console.log("active home");
+
+        function loop(a) {
+          console.log('loop');
+          $("#cta_hero").html(a);
+        }
+        loop();
+        setInterval(function() {
+          loop(a);
+        }, 200);
+        var counter = 0;
+
+        function controller() {
+          console.log(counter);
+          counter++;
+          if (counter < 3) {
+            a = 'ayudar';
+          } else if (counter < 6) {
+            a = 'colaborar';
+          } else if (counter < 9) {
+            a = 'unirse';
+          }  else if (counter < 12) {
+            a = 'participar';
+          }  else if (counter < 15) {
+            a = 'exigir';
+          }  else if (counter < 18) {
+            a = 'reunirse';
+          }  else if (counter < 21) {
+            a = 'informarse';
+          } else {
+            counter = 0;
+          }
+        }
+
+        function createInterval(controller, interval) {
+          setInterval(function() {
+            controller();
+          }, interval);
+        }
+        createInterval(controller, 200);
+      },
+      finalize: function() {
+        // JavaScript to be fired on all pages, after page specific JS is fired
+      }
+    },
     'mapa': {
       init: function() {
         var Data = [];
@@ -164,7 +178,7 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'tuitea': {
+    'single-tuitea': {
       init: function() {
         // JavaScript to be fired on the about us page
         var tweet = $('#tweet_text').text();

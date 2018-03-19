@@ -26,7 +26,7 @@
 					<br>Si eres una organización o colectivo y quieres aparecer en el mapa, puedes ir a nuestra página de contacto y si quieres sumarte como parte de las personas que verifican que estas existan también no dudes en contactarnos.
 					<br>La meta para finales de año es tener al menos 25 organizaciones y/o colectivos registrados por cada estado del país y podemos lograrlo con tu ayuda.</p>
 					<br>
-					<a class="btn_proyectos" href="">Conoce más</a>
+					<a class="btn_proyectos" href="<?php echo get_site_url(); ?>/mapa">Conoce más</a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -36,7 +36,7 @@
 						<br>La sociedad civil puede exigirle a sus representantes muchas cosas y para eso surge esta plataforma donde nos pueden mandar su petición y después de verificar que se le vaya a dar un correcto uso, podremos establecer en pocos minutos una página donde cuente todo sobre la petición así como vengan los datos de a quien se le puede tuitear.
 						<br>Queremos que participar sea tan sencillo que se pueda hacer con un par de tuits.</p>
 					<br>
-					<a class="btn_proyectos" href="">Conoce más</a>
+					<a class="btn_proyectos" href="<?php echo get_site_url(); ?>/tuitea">Conoce más</a>
 				</div>
 			</div>
 		</div>

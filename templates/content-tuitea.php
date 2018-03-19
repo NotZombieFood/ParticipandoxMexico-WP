@@ -28,8 +28,8 @@
 </tr> 
 </thead> 
 <tbody> 
-<?php if(have_rows('tuitea')):
-   while(have_rows('tuitea')): the_row(); ?>
+<?php if(have_rows('tuitea_cf')):
+   while(have_rows('tuitea_cf')): the_row(); ?>
    <tr class="bordertop-gris"> 
    	<td> <?php the_sub_field("nombre");?> </td>
    	<td> <?php the_sub_field("apellido_paterno"); ?> </td>
