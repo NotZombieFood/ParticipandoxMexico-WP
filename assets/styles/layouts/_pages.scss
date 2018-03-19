@@ -24,7 +24,9 @@
   justify-content: center;
   align-items: center;
 }
-
+.center{
+    text-align: center;
+}
 .informacion-entrada {
   padding-left: 50px;
 }
@@ -224,4 +226,91 @@
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
+}
+
+
+#hero{
+    background-image: url(../images/hero.jpg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    font-weight: $light;
+}
+
+#hero span{
+    color: #71E4EB;
+    font-weight: $regular;
+}
+
+#descanso_home{
+    height: 40vh;
+    width: 100%;
+    background-image: url(../images/descanso.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro_home{
+    padding: 60px 0px;
+}
+
+#intro_home h1{
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+#intro_home h2{
+    font-size: 22px;
+    font-weight: $light;
+}
+
+#proyectos_home{
+    padding: 50px 0px;
+    background-color: #292929;
+}
+
+.proyectos{
+    margin: 0px 20px;
+    padding: 25px;
+    border: 1px solid #f2f2f2;
+    color: #f2f2f2;
+    height: 565px;
+}
+
+.proyectos a{
+    text-align: center;
+    padding: 15px 30px;
+    border: 1px solid #f2f2f2;
+    color: #f2f2f2;
+    transition: all 1s;
+    font-size: 25px;
+    margin: 20px auto;
+}
+.proyectos a:hover{
+    background-color:  #f2f2f2;
+    color: #292929;
+    text-decoration: none;
+}
+
+.proyectos p{
+    font-weight: $light;
+    text-align: justify;
+}
+
+.proyectos h1{
+    margin-bottom: 25px;
+}
+
+.logo_hero{
+    width: 240px;
 }
