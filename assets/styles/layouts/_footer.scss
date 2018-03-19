@@ -1,0 +1,19 @@
+footer{
+	padding: 5px 0px;
+	text-align: center;
+}
+
+footer {
+	background-color:  #292929;
+}
+
+footer a{
+	color: white;
+	transition: all 1s;
+	font-weight: $bold;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color:  #71E4EB;
+}

@@ -279,7 +279,7 @@
     height: 565px;
 }
 
-.proyectos a{
+.proyectos a,input[type="submit"]{
     text-align: center;
     padding: 15px 30px;
     border: 1px solid #f2f2f2;
@@ -287,8 +287,9 @@
     transition: all 1s;
     font-size: 25px;
     margin: 20px auto;
+    background-color: rgba(0,0,0,0);
 }
-.proyectos a:hover{
+.proyectos a:hover,input[type="submit"]:hover{
     background-color:  #f2f2f2;
     color: #292929;
     text-decoration: none;
@@ -321,15 +322,61 @@
 }
 
 
+#cta_home a{
+    padding: 15px 30px;
+    color: #292929;
+    border: 1px solid #292929;
+    transition: all 1s;
+    font-size: 20px;
+    margin-top: 20px;
+}
 
+#cta_home a:hover{
+    color: white;
+    background-color: #292929;
+    text-decoration: none;
+}
 
+#contacto {
+    height: 100vh;
+    width: 100%;
+}
+.box_contacto{
+    padding: 30px 25px;
+    background-color: #292929;
+}
+.box_contacto h1{
+    color: white;
+}
 
+input{
+    display: block;
+}
 
+input[type="text"], input[type="email"]{
+    background-color: rgba(0,0,0,0);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #a2a2a2;
+    color: white;
+    margin-bottom: 10px;
+    width: 300px;
+}
 
-
+textarea{
+    width: 50vw;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #a2a2a2;
+     resize: none;
+}
 
 
 @media screen and (max-width: 768px) {
+    textarea{
+    width: 80vw;
+    }
   .table-responsive-mobile {
     display: block;
     width: 100%;
@@ -363,7 +410,7 @@
     padding: 0 20px;
 }
 .padR {
-    padding-right: 0px;
+    padding: 0px 15px;
     height: 60vh;
 }
 }
