@@ -40,7 +40,6 @@
         console.log("active home");
 
         function loop(a) {
-          console.log('loop');
           $("#cta_hero").html(a);
         }
         loop();
@@ -50,7 +49,6 @@
         var counter = 0;
 
         function controller() {
-          console.log(counter);
           counter++;
           if (counter < 3) {
             a = 'ayudar';

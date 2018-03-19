@@ -42,7 +42,8 @@
 		</div>
 	</div>
 </section>
-<section id="cta_home">
-	<h1>Lorem ipsum dolor sit amet, consecolores quo expedita ipsum nostrum.</h1>
+<section id="cta_home" class="center">
+	<h1>¡Imagina soluciones nuevas y les damos forma!</h1>
+	<h2>Somos un proyecto totalmente abierto, pueden observar lo que estamos haciendo y contribuir con ideas, código o simplemente un mensaje de apoyo.</h2>
 </section>
 <section id="contacto_home"></section>

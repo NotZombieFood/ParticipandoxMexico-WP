@@ -101,8 +101,10 @@ function display_sidebar() {
     is_page('corporativos'),
     is_page('soluciones-para-tu-empresa'),
     is_page('ubicacion'),
-    is_page('tuiteapreview'),
+    is_page('mapa'),
     is_page_template('template-custom.php'),
+    is_page_template('tuitea'),
+    is_page_template('archive-tuitea')
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

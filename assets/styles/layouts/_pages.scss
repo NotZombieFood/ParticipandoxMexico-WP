@@ -219,14 +219,6 @@
 }
 
 
-@media screen and (max-width: 768px) {
-  .table-responsive-mobile {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-  }
-}
 
 
 #hero{
@@ -313,4 +305,65 @@
 
 .logo_hero{
     width: 240px;
+}
+
+
+#cta_home{
+    padding: 60px 150px;
+}
+
+#cta_home h1{
+    font-size: 25px;
+}
+
+#cta_home h2{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .table-responsive-mobile {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  #descanso_home{
+    background-attachment: unset;
+  }
+  .logo_hero {
+    width: 165px;
+}
+#hero h1 {
+    font-size: 32px;
+}
+.proyectos h1 {
+    font-size: 23px;
+}
+.proyectos p{
+    font-size: 15px;
+}
+.proyectos {
+    margin: 20px 20px;
+    padding: 25px;
+    height: unset;
+}
+#cta_home {
+    padding: 60px 30px;
+}
+.informacion-entrada {
+    padding: 0 20px;
+}
+.padR {
+    padding-right: 0px;
+    height: 60vh;
+}
 }
