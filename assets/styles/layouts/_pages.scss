@@ -24,9 +24,11 @@
   justify-content: center;
   align-items: center;
 }
-.center{
-    text-align: center;
+
+.center {
+  text-align: center;
 }
+
 .informacion-entrada {
   padding-left: 50px;
 }
@@ -172,11 +174,13 @@
 #tweet {
   padding: 70px 0px;
 }
-#tweet th{
-    background-color: #404040;
-    color: white;
-    font-size: $light;
+
+#tweet th {
+  background-color: #404040;
+  color: white;
+  font-size: $light;
 }
+
 #tweet h3 {
   text-align: center;
   margin: 15px 0px;
@@ -209,219 +213,268 @@
   margin: 0 auto;
 }
 
-#tweet a{
-    color: #404040;
-    transition: all 1s;
+#tweet a {
+  color: #404040;
+  transition: all 1s;
 }
 
-#tweet a:hover{
-    color: #1B95E0;
+#tweet a:hover {
+  color: #1B95E0;
 }
 
 
 
 
-#hero{
-    background-image: url(../images/hero.jpg);
-    height: 100vh;
-    width: 100%;
-    display: flex;
+#hero {
+  background-image: url(../images/hero.jpg);
+  height: 100vh;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   background-size: cover;
   background-position: center center;
 }
 
-#hero h1{
-    color: white;
-    font-weight: $light;
+#hero h1 {
+  color: white;
+  font-weight: $light;
 }
 
-#hero span{
-    color: #71E4EB;
-    font-weight: $regular;
+#hero span {
+  color: #71E4EB;
+  font-weight: $regular;
 }
 
-#descanso_home{
-    height: 40vh;
-    width: 100%;
-    background-image: url(../images/descanso.jpg);
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#descanso_home {
+  height: 40vh;
+  width: 100%;
+  background-image: url(../images/descanso.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#intro_home{
-    padding: 60px 0px;
+#intro_home {
+  padding: 60px 0px;
 }
 
-#intro_home h1{
-    font-size: 29px;
-    margin-bottom: 20px;
+#intro_home h1 {
+  font-size: 29px;
+  margin-bottom: 20px;
 }
 
-#intro_home h2{
-    font-size: 22px;
-    font-weight: $light;
+#intro_home h2 {
+  font-size: 22px;
+  font-weight: $light;
 }
 
-#proyectos_home{
-    padding: 50px 0px;
-    background-color: #292929;
+#proyectos_home {
+  padding: 50px 0px;
+  background-color: #292929;
 }
 
-.proyectos{
-    margin: 0px 20px;
-    padding: 25px;
-    border: 1px solid #f2f2f2;
-    color: #f2f2f2;
-    height: 565px;
+.proyectos {
+  margin: 0px 20px;
+  padding: 25px;
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  height: 565px;
 }
 
-.proyectos a,input[type="submit"],.archive-posts-singles a{
-    text-align: center;
-    padding: 15px 30px;
-    border: 1px solid #f2f2f2;
-    color: #f2f2f2;
-    transition: all 1s;
-    font-size: 25px;
-    margin: 20px auto;
-    background-color: rgba(0,0,0,0);
-}
-.proyectos a:hover,input[type="submit"]:hover,.archive-posts-singles a:hover{
-    background-color:  #f2f2f2;
-    color: #292929;
-    text-decoration: none;
+.proyectos a,
+input[type="submit"],
+.archive-posts-singles a {
+  text-align: center;
+  padding: 15px 30px;
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  transition: all 1s;
+  font-size: 25px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.proyectos p{
-    font-weight: $light;
-    text-align: justify;
+.proyectos a:hover,
+input[type="submit"]:hover,
+.archive-posts-singles a:hover {
+  background-color: #f2f2f2;
+  color: #292929;
+  text-decoration: none;
 }
 
-.proyectos h1{
-    margin-bottom: 25px;
+.proyectos p {
+  font-weight: $light;
+  text-align: justify;
 }
 
-.logo_hero{
-    width: 240px;
+.proyectos h1 {
+  margin-bottom: 25px;
 }
 
-
-#cta_home,#tuitea-archive-titulo{
-    padding: 60px 150px;
-}
-
-#cta_home h1,#tuitea-archive-titulo h1{
-    font-size: 25px;
-}
-
-#cta_home h2,#tuitea-archive-titulo h2{
-    font-size: 18px;
+.logo_hero {
+  width: 240px;
 }
 
 
-#cta_home a{
-    padding: 15px 30px;
-    color: #292929;
-    border: 1px solid #292929;
-    transition: all 1s;
-    font-size: 20px;
-    margin-top: 20px;
+#cta_home,
+#tuitea-archive-titulo {
+  padding: 60px 150px;
 }
 
-#cta_home a:hover{
-    color: white;
-    background-color: #292929;
-    text-decoration: none;
+#cta_home h1,
+#tuitea-archive-titulo h1 {
+  font-size: 25px;
+}
+
+#cta_home h2,
+#tuitea-archive-titulo h2 {
+  font-size: 18px;
+}
+
+
+#cta_home a {
+  padding: 15px 30px;
+  color: #292929;
+  border: 1px solid #292929;
+  transition: all 1s;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#cta_home a:hover {
+  color: white;
+  background-color: #292929;
+  text-decoration: none;
 }
 
 #contacto {
-    height: 100vh;
-    width: 100%;
-}
-.box_contacto{
-    padding: 30px 25px;
-    background-color: #292929;
+  height: 100vh;
+  width: 100%;
 }
 
-#tuits-archive-posts{
-    background-color:  #292929;
-}
-.archive-posts-singles{
-    margin: 20px 10px;
-    padding: 20px;
-    border: 1px solid #e2e2e2;
-    color: white;
-    height: 350px;
-}
-.box_contacto h1{
-    color: white;
+.box_contacto {
+  padding: 30px 25px;
+  background-color: #292929;
 }
 
-input{
-    display: block;
+#tuits-archive-posts {
+  background-color: #292929;
 }
 
-input[type="text"], input[type="email"]{
-    background-color: rgba(0,0,0,0);
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid #a2a2a2;
-    color: white;
-    margin-bottom: 10px;
-    width: 300px;
+.archive-posts-singles {
+  margin: 20px 10px;
+  padding: 20px;
+  border: 1px solid #e2e2e2;
+  color: white;
+  height: 350px;
 }
 
-textarea{
-    width: 50vw;
-    margin-top: 10px;
-    background-color: rgba(0,0,0,0);
-    border: 1px solid #a2a2a2;
-     resize: none;
+.box_contacto h1 {
+  color: white;
 }
 
+.box_contacto p {
+  margin: 0;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+  background-color: rgba(0, 0, 0, 0);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #a2a2a2;
+  color: white;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+textarea {
+  width: 50vw;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #a2a2a2;
+  resize: none;
+  height: 100px;
+}
+
+input[type="submit"] {
+  margin-bottom: 0px;
+}
 
 @media screen and (max-width: 768px) {
-    textarea{
+  #contacto {
+    padding: 20px;
+    height: unset;
+    width: 100%;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+  }
+  .dropdown-item {
+    padding: 3px 0px;
+  }
+  textarea {
     width: 80vw;
-    }
+  }
   .table-responsive-mobile {
     display: block;
     width: 100%;
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
-  #descanso_home{
+  #descanso_home {
     background-attachment: unset;
   }
   .logo_hero {
     width: 165px;
-}
-#hero h1 {
+  }
+  #hero h1 {
     font-size: 32px;
-}
-.proyectos h1 {
+  }
+  .proyectos h1 {
     font-size: 23px;
-}
-.proyectos p{
+  }
+  .proyectos p {
     font-size: 15px;
-}
-.proyectos {
+  }
+  .proyectos {
     margin: 20px 20px;
     padding: 25px;
     height: unset;
-}
-#cta_home, #tuitea-archive-titulo {
+  }
+  #cta_home,
+  #tuitea-archive-titulo {
     padding: 60px 30px;
-}
-.informacion-entrada {
+  }
+  .informacion-entrada {
     padding: 0 20px;
-}
-.padR {
+  }
+  .padR {
     padding: 0px 15px;
     height: 60vh;
+  }
+
+.dropdown-toggle:before {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+    transform: rotate(0deg)
 }
+
 }
