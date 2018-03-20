@@ -104,7 +104,8 @@ function display_sidebar() {
     is_page('mapa'),
     is_page_template('template-custom.php'),
     is_page_template('tuitea'),
-    is_page_template('archive-tuitea')
+    is_page_template('archive-tuitea'),
+    is_archive()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
