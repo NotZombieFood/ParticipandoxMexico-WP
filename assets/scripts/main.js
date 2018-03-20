@@ -175,7 +175,7 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
-    'single-tuitea': {
+    'single': {
       init: function() {
         console.log('estamos en single tuitea');
         // JavaScript to be fired on the about us page
