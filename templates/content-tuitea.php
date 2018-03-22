@@ -1,4 +1,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.29.6/js/jquery.tablesorter.min.js"></script>
+<section id="tuitea-archive-titulo">
+	<h1><?php the_title(); ?></h1>
+	<h2><?php echo get_field("subtitulo");?></h2>
+</section>
 <section id="tweet">
 	<div class="container">
 	<div class="row">
