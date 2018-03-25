@@ -3,10 +3,13 @@
   <ul class="sidebar-nav">
     <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="far fa-times-circle"></i></a>
     <li class="sidebar-brand">
-      <a href="<?php echo get_site_url(); ?>">Participando</a>
+      <a href="<?php echo get_site_url(); ?>">ParticipandoMX</a>
     </li>
     <li>
       <a href="<?php echo get_site_url(); ?>">Inicio</a>
+    </li>
+    <li>
+      <a href="<?php echo get_site_url(); ?>/nosotros">Nosotros</a>
     </li>
     <li>
       <a href="<?php echo get_site_url(); ?>/mapa">Mapa Colectivos y ACs</a>

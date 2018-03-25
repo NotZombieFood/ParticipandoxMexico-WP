@@ -19,5 +19,8 @@
 		</div>
 	</div>
 </section>
-
-
+<section id="tuitea-archive-titulo">
+	<h2>¿Quieres crear una petición usando tuitea?</h2>
+	<br><br>
+	<a href="<?php echo get_site_url(); ?>/contacto">¡Cuéntanos más!</a>
+</section>
