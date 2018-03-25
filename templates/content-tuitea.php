@@ -46,6 +46,8 @@
 <?php endif; ?>
 </tbody> 
 </table> 
+<br><br>
+<?php echo get_field("custom_html");?>
 </div>
 </div>
 </div>
