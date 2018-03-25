@@ -1,5 +1,5 @@
 <section id="hero">
- 	<div class="center">
+ 	<div class="center w750">
 		<img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" class="logo_hero" alt="">
 		<h1>Buscamos que todos puedan <span id="cta_hero">ayudar</span></h1>	
 	</div>

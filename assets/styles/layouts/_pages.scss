@@ -339,6 +339,9 @@ input[type="submit"]:hover,
   font-size: 18px;
 }
 
+.w750{
+  width: 750px;
+}
 #tuitea-archive-titulo h2 {
       font-size: 33px;
     line-height: 50px;
@@ -448,6 +451,9 @@ div.wpcf7-mail-sent-ok {
   textarea {
     width: 80vw;
   }
+  .w750{
+  width: unset;
+}
   .table-responsive-mobile {
     display: block;
     width: 100%;
