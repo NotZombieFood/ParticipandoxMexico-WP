@@ -36,45 +36,31 @@
     },
     'home': {
       init: function() {
-        var a;
-        console.log("active home");
+         var Data = [];
 
-        function loop(a) {
-          $("#cta_hero").html(a);
+        function getData() {
+          console.log('running...');
+          $('.palabras').each(function(i, obj) {
+            Data.push($(this).data("texto"));
+          });
+        }
+        getData();
+        var i = 0;
+        console.log("active home");
+        console.log(Data);
+
+        function loop() {
+          $("#cta_hero").html(Data[i]);
+          i = i + 1;
+          if(i === Data.length){
+            i = 0;
+          } 
         }
         loop();
         setInterval(function() {
-          loop(a);
-        }, 200);
-        var counter = 0;
+          loop();
+        }, 500);
 
-        function controller() {
-          counter++;
-          if (counter < 3) {
-            a = 'ayudar';
-          } else if (counter < 6) {
-            a = 'colaborar';
-          } else if (counter < 9) {
-            a = 'unirse';
-          }  else if (counter < 12) {
-            a = 'participar';
-          }  else if (counter < 15) {
-            a = 'exigir';
-          }  else if (counter < 18) {
-            a = 'reunirse';
-          }  else if (counter < 21) {
-            a = 'informarse';
-          } else {
-            counter = 0;
-          }
-        }
-
-        function createInterval(controller, interval) {
-          setInterval(function() {
-            controller();
-          }, interval);
-        }
-        createInterval(controller, 200);
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
