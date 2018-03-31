@@ -433,6 +433,13 @@ input[type="submit"] {
 div.wpcf7-mail-sent-ok {
     border: none;
 }
+.text-center{
+  text-align: center;
+}
+.row.text-center > div {
+        display: inline-block;
+        float: none;
+    }
 @media screen and (max-width: 768px) {
   #contacto {
     padding: 20px;
@@ -506,3 +513,102 @@ div.wpcf7-mail-sent-ok {
 }
 
 }
+
+#candidatos, #perfil {
+    padding: 50px 0px;
+    background: -moz-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236, 239, 243, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+#perfil {
+  padding: 50px 100px;
+}
+#perfil p{
+  margin-bottom: 2px;
+    color: #1c1c1c;
+}
+
+#perfil a {
+    color: #8076e2;
+    transition: all 1s;
+    margin: 0 5px;
+}
+#candidatos h3{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.m-tp{
+    margin: 20px;
+}
+
+.smallURL{
+    font-size: 15px;
+    margin: 0 0 !important;
+}
+
+.smallText{
+    font-size: 12px;
+}
+#perfil a:hover{
+    text-decoration: none;
+    color: #bebae2;
+}
+#candidatos img {
+    width: 80%;
+    transition: all 1s;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#perfil img{
+  width: 100%;
+  text-align: center;
+}
+
+#candidatos img:hover {
+    opacity: .6;
+}
+
+.m-sides-100 {
+    margin-top: 50px;
+}
+
+#candidatos h1 {
+    margin-bottom: 20px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    color: #1c1c1c;
+}
+b{
+    font-weight: $bold;
+}
+#candidatos a{
+    text-align: center;
+}
+
+#candidatos h2 {
+    font-weight: $medium;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: #1c1c1c;
+}
+
+
+@media screen and (max-width: 760px) {
+  #candidatos img{
+    width: 100%;
+  }
+  .m-sides-100 {
+    margin: 0 50px;
+}
+#perfil {
+    padding: 50px 30px;
+}
+}
+
+

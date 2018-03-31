@@ -18,7 +18,7 @@
 <section id="descanso_home"></section>
 <section id="proyectos_home">
 	<div class="container">
-		<div class="row">
+		<div class="row text-center">
 			<?php if(have_rows('proyectos')):
 			   while(have_rows('proyectos')): the_row(); ?>
 			<div class="col-md-6">

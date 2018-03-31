@@ -36,7 +36,7 @@
     },
     'home': {
       init: function() {
-         var Data = [];
+        var Data = [];
 
         function getData() {
           console.log('running...');
@@ -52,9 +52,9 @@
         function loop() {
           $("#cta_hero").html(Data[i]);
           i = i + 1;
-          if(i === Data.length){
+          if (i === Data.length) {
             i = 0;
-          } 
+          }
         }
         loop();
         setInterval(function() {
@@ -161,7 +161,7 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
-    'single': {
+    'single-tuitea': {
       init: function() {
         console.log('estamos en single tuitea');
         // JavaScript to be fired on the about us page
@@ -203,46 +203,59 @@
         });
       }
     },
-    'tuitea-template-default': {
+    'single-candidatos': {
       init: function() {
-        console.log('estamos en tuitea-template-default');
-        // JavaScript to be fired on the about us page
-        var tweet = $('#tweet_text').text();
-        $(document).ready(function() {
-          $("#myTable").tablesorter();
-        });
-        $('.twitter-icon').each(function(i, obj) {
-          var username = $(this).data("handle");
-          var tweet_completo = username + ' ' + tweet;
-          var encoded_tweet = encodeURIComponent(tweet_completo);
-          var url_tweet = 'https://twitter.com/intent/tweet?url=null&text=.%40' + encoded_tweet;
-          $(this).attr("href", url_tweet);
-        });
-        $('.logo-partido').each(function(i, obj) {
-          var partido = $(this).attr("alt");
-          var imagen;
-          if (partido === 'PRI') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PRI_logo_Mexico.png';
-          } else if (partido === 'PAN') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PAN_logo_Mexico.png';
-          } else if (partido === 'PRD') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PRD_logo_Mexico.png';
-          } else if (partido === 'PT') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PT_logo_Mexico.png';
-          } else if (partido === 'MORENA') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/Morena.png';
-          } else if (partido === 'PNA') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PNA_logo_Mexico.png';
-          } else if (partido === 'PES') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PES_logo_Mexico.png';
-          } else if (partido === 'MC') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/MC_Party_Mexico.png';
-          } else if (partido === 'PV') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PVE_logo_Mexico.png';
+
+      }
+    },
+    'archive-candidatos': {
+      init: function() {
+        /**
+         * Returns a random integer between min and max values (inclusive)
+         */
+        function getRandomInt(min, max) {
+          return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        /**
+         * Returns a uniquely generated random integer array, so we can use this as our order.
+         */
+        function getRandomSequence(limit) {
+          var arr = [];
+          while (arr.length < limit) {
+            var randomnumber = getRandomInt(0, limit - 1);
+            var found = false;
+            for (var i = 0; i < arr.length; i++) {
+              if (arr[i] == randomnumber) {
+                found = true;
+                break;
+              }
+            }
+            if (!found) arr[arr.length] = randomnumber;
           }
-          console.log(imagen);
-          $(this).attr("src", imagen);
-        });
+          return arr;
+        }
+
+        /**
+         * Shows randomly ordered columns in a container.
+         */
+        function orderColumnsRandomly() {
+          // Get the children of the container
+          var columns = $("#presidentes").children();
+
+          // Empty the container.
+          $("#presidentes").html('');
+
+          // Get a random sequence to show the columns
+          var sequence = getRandomSequence(columns.length);
+
+          // Loop through the column array with the given sequence and fill the container.
+          for (var i = 0; i < sequence.length; i++) {
+            $("#presidentes").append($(columns[sequence[i]]));
+          }
+        }
+
+        orderColumnsRandomly();
       }
     }
   };

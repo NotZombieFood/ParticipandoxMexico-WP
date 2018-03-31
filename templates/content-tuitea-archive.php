@@ -4,7 +4,7 @@
 </section>
 <section id="tuits-archive-posts">
 	<div class="container">
-		<div class="row">
+		<div class="row text-center">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="col-md-6">
 					<div class="archive-posts-singles">
