@@ -2,6 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 center">
+                    <br><br>
                     <h2>Los</h2>
                     <h1>Presidenciables</h1>
                 </div>

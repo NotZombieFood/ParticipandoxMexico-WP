@@ -161,46 +161,48 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
-    'single-tuitea': {
+    'single': {
       init: function() {
         console.log('estamos en single tuitea');
         // JavaScript to be fired on the about us page
-        var tweet = $('#tweet_text').text();
-        $(document).ready(function() {
-          $("#myTable").tablesorter();
-        });
-        $('.twitter-icon').each(function(i, obj) {
-          var username = $(this).data("handle");
-          var tweet_completo = username + ' ' + tweet;
-          var encoded_tweet = encodeURIComponent(tweet_completo);
-          var url_tweet = 'https://twitter.com/intent/tweet?url=null&text=.%40' + encoded_tweet;
-          $(this).attr("href", url_tweet);
-        });
-        $('.logo-partido').each(function(i, obj) {
-          var partido = $(this).attr("alt");
-          var imagen;
-          if (partido === 'PRI') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PRI_logo_Mexico.png';
-          } else if (partido === 'PAN') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PAN_logo_Mexico.png';
-          } else if (partido === 'PRD') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PRD_logo_Mexico.png';
-          } else if (partido === 'PT') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PT_logo_Mexico.png';
-          } else if (partido === 'MORENA') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/Morena.png';
-          } else if (partido === 'PNA') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PNA_logo_Mexico.png';
-          } else if (partido === 'PES') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PES_logo_Mexico.png';
-          } else if (partido === 'MC') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/MC_Party_Mexico.png';
-          } else if (partido === 'PV') {
-            imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PVE_logo_Mexico.png';
-          }
-          console.log(imagen);
-          $(this).attr("src", imagen);
-        });
+        if ($('#tweet_text').length) {
+          var tweet = $('#tweet_text').text();
+          $(document).ready(function() {
+            $("#myTable").tablesorter();
+          });
+          $('.twitter-icon').each(function(i, obj) {
+            var username = $(this).data("handle");
+            var tweet_completo = username + ' ' + tweet;
+            var encoded_tweet = encodeURIComponent(tweet_completo);
+            var url_tweet = 'https://twitter.com/intent/tweet?url=null&text=.%40' + encoded_tweet;
+            $(this).attr("href", url_tweet);
+          });
+          $('.logo-partido').each(function(i, obj) {
+            var partido = $(this).attr("alt");
+            var imagen;
+            if (partido === 'PRI') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PRI_logo_Mexico.png';
+            } else if (partido === 'PAN') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PAN_logo_Mexico.png';
+            } else if (partido === 'PRD') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PRD_logo_Mexico.png';
+            } else if (partido === 'PT') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PT_logo_Mexico.png';
+            } else if (partido === 'MORENA') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/Morena.png';
+            } else if (partido === 'PNA') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PNA_logo_Mexico.png';
+            } else if (partido === 'PES') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PES_logo_Mexico.png';
+            } else if (partido === 'MC') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/MC_Party_Mexico.png';
+            } else if (partido === 'PV') {
+              imagen = 'https://mapa.southcentralus.cloudapp.azure.com/wp-content/uploads/2018/03/PVE_logo_Mexico.png';
+            }
+            console.log(imagen);
+            $(this).attr("src", imagen);
+          });
+        }
       }
     },
     'single-candidatos': {
@@ -208,7 +210,7 @@
 
       }
     },
-    'archive-candidatos': {
+    'archive': {
       init: function() {
         /**
          * Returns a random integer between min and max values (inclusive)
@@ -226,12 +228,14 @@
             var randomnumber = getRandomInt(0, limit - 1);
             var found = false;
             for (var i = 0; i < arr.length; i++) {
-              if (arr[i] == randomnumber) {
+              if (arr[i] === randomnumber) {
                 found = true;
                 break;
               }
             }
-            if (!found) arr[arr.length] = randomnumber;
+            if (!found) {
+              arr[arr.length] = randomnumber;
+            }
           }
           return arr;
         }
@@ -255,7 +259,10 @@
           }
         }
 
-        orderColumnsRandomly();
+        if ($("#presidentes").length) {
+          orderColumnsRandomly();
+        }
+
       }
     }
   };

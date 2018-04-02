@@ -1,5 +1,5 @@
-
 <section id="perfil">
+    <br><br>
         <div class="container" id="informacion">
             <div class="row">
                 <div class="col-md-3"> <img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>"> </div>
@@ -13,6 +13,7 @@
                     <p><b>Redes sociales:</b> <?php echo get_field("redes");?></p>
                 </div>
             </div>
+            <br>    
             <div class="row">
                 <div class="col-md-12">
                     <h2>Propuestas</h2>
