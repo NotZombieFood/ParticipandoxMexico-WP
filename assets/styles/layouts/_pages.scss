@@ -348,7 +348,7 @@ input[type="submit"]:hover,
 }
 
 
-#cta_home a, #tuitea-archive-titulo a {
+#cta_home a, #tuitea-archive-titulo a, .boton-candidato {
   padding: 15px 30px;
   color: #292929;
   border: 1px solid #292929;
@@ -357,7 +357,7 @@ input[type="submit"]:hover,
   margin-top: 20px;
 }
 
-#cta_home a:hover, #tuitea-archive-titulo a:hover {
+#cta_home a:hover, #tuitea-archive-titulo a:hover,.boton-candidato:hover {
   color: white;
   background-color: #292929;
   text-decoration: none;
