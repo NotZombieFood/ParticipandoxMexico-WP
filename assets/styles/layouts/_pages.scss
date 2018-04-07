@@ -323,32 +323,37 @@ input[type="submit"]:hover,
   padding: 60px 150px;
 }
 
-#tuitea-archive-titulo{
+#tuitea-archive-titulo {
   text-align: center;
 }
+
 #cta_home h1 {
   font-size: 25px;
 }
 
 #tuitea-archive-titulo h1 {
-      font-size: 75px;
-    margin-bottom: 35px;
-    font-weight: bolder;
+  font-size: 75px;
+  margin-bottom: 35px;
+  font-weight: bolder;
 }
+
 #cta_home h2 {
   font-size: 18px;
 }
 
-.w750{
+.w750 {
   width: 750px;
 }
+
 #tuitea-archive-titulo h2 {
-      font-size: 33px;
-    line-height: 50px;
+  font-size: 33px;
+  line-height: 50px;
 }
 
 
-#cta_home a, #tuitea-archive-titulo a, .boton-candidato {
+#cta_home a,
+#tuitea-archive-titulo a,
+.boton-candidato {
   padding: 15px 30px;
   color: #292929;
   border: 1px solid #292929;
@@ -357,7 +362,13 @@ input[type="submit"]:hover,
   margin-top: 20px;
 }
 
-#cta_home a:hover, #tuitea-archive-titulo a:hover,.boton-candidato:hover {
+.boton-candidato {
+  background-color: white;
+}
+
+#cta_home a:hover,
+#tuitea-archive-titulo a:hover,
+.boton-candidato:hover {
   color: white;
   background-color: #292929;
   text-decoration: none;
@@ -422,24 +433,29 @@ textarea {
 input[type="submit"] {
   margin-bottom: 0px;
 }
-.archive-posts-singles a{
-      position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 200px;
+
+.archive-posts-singles a {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 200px;
 }
+
 div.wpcf7-mail-sent-ok {
-    border: none;
+  border: none;
 }
-.text-center{
+
+.text-center {
   text-align: center;
 }
-.row.text-center > div {
-        display: inline-block;
-        float: none;
-    }
+
+.row.text-center>div {
+  display: inline-block;
+  float: none;
+}
+
 @media screen and (max-width: 768px) {
   #contacto {
     padding: 20px;
@@ -458,9 +474,9 @@ div.wpcf7-mail-sent-ok {
   textarea {
     width: 80vw;
   }
-  .w750{
-  width: unset;
-}
+  .w750 {
+    width: unset;
+  }
   .table-responsive-mobile {
     display: block;
     width: 100%;
@@ -499,7 +515,7 @@ div.wpcf7-mail-sent-ok {
     height: 60vh;
   }
 
-.dropdown-toggle:before {
+  .dropdown-toggle:before {
     display: inline-block;
     width: 0;
     height: 0;
@@ -510,105 +526,109 @@ div.wpcf7-mail-sent-ok {
     border-right: .3em solid transparent;
     border-left: .3em solid transparent;
     transform: rotate(0deg)
+  }
 }
 
-}
-
-#candidatos, #perfil {
-    padding: 50px 0px;
-    background: -moz-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236, 239, 243, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
-    background: -webkit-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    background: -o-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    background: linear-gradient(to bottom, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+#candidatos,
+#perfil {
+  padding: 50px 0px;
+  background: -moz-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(236, 239, 243, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+  background: -webkit-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -o-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to bottom, rgba(236, 239, 243, 1) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 #perfil {
   padding: 50px 100px;
 }
-#perfil p{
+
+#perfil p {
   margin-bottom: 2px;
-    color: #1c1c1c;
+  color: #1c1c1c;
 }
 
 #perfil a {
-    color: #8076e2;
-    transition: all 1s;
-    margin: 0 5px;
-}
-#candidatos h3{
-    font-weight: normal;
-    font-size: 20px;
+  color: #8076e2;
+  transition: all 1s;
+  margin: 0 5px;
 }
 
-.m-tp{
-    margin: 20px;
+#candidatos h3 {
+  font-weight: normal;
+  font-size: 20px;
 }
 
-.smallURL{
-    font-size: 15px;
-    margin: 0 0 !important;
+.m-tp {
+  margin: 20px;
 }
 
-.smallText{
-    font-size: 12px;
+.smallURL {
+  font-size: 15px;
+  margin: 0 0 !important;
 }
-#perfil a:hover{
-    text-decoration: none;
-    color: #bebae2;
+
+.smallText {
+  font-size: 12px;
 }
+
+#perfil a:hover {
+  text-decoration: none;
+  color: #bebae2;
+}
+
 #candidatos img {
-    width: 80%;
-    transition: all 1s;
-    text-align: center;
-    margin: 10px auto;
+  width: 80%;
+  transition: all 1s;
+  text-align: center;
+  margin: 10px auto;
 }
 
-#perfil img{
+#perfil img {
   width: 100%;
   text-align: center;
 }
 
 #candidatos img:hover {
-    opacity: .6;
+  opacity: .6;
 }
 
 .m-sides-100 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 #candidatos h1 {
-    margin-bottom: 20px;
-    font-weight: $bold;
-    text-transform: uppercase;
-    color: #1c1c1c;
+  margin-bottom: 20px;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: #1c1c1c;
 }
-b{
-    font-weight: $bold;
+
+b {
+  font-weight: $bold;
 }
-#candidatos a{
-    text-align: center;
+
+#candidatos a {
+  text-align: center;
 }
 
 #candidatos h2 {
-    font-weight: $medium;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-    color: #1c1c1c;
+  font-weight: $medium;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: #1c1c1c;
 }
 
 
 @media screen and (max-width: 760px) {
-  #candidatos img{
+  #candidatos img {
     width: 100%;
   }
   .m-sides-100 {
     margin: 0 50px;
-}
-#perfil {
+  }
+  #perfil {
     padding: 50px 30px;
+  }
 }
-}
-
-
