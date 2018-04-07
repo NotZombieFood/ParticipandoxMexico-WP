@@ -26,6 +26,7 @@
                     <button class="boton-candidato" id="seguridad">Seguridad</button>
                     <button class="boton-candidato" id="ecologia">Ecología</button>
                 </div>
+                <br>
                 <div id="propuestas" class="col-md-12">
                     
                 </div>
