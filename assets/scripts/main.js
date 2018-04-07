@@ -203,6 +203,30 @@
             $(this).attr("src", imagen);
           });
         }
+
+        function getData() {
+          console.log('running...');
+          $('.objetos').each(function(i, obj) {
+            var categoria = $(this).data("categoria");
+            var propuesta = $(this).data("propuesta");
+            var subarray = [propuesta, categoria];
+            Data.push(subarray);
+          });
+        }
+        if ($('#perfil').length) {
+          var Data = [];
+          getData();
+          $('.boton-candidato').on('click', function() {
+            var categoriaBTN = $(this).attr("id");
+            var code;
+            for (var i = 0; i < Data.length; i++) {
+              if (Data[1] === categoriaBTN) {
+                code += "<p>" + Data[0] + "</p>";
+              }
+            }
+            $("#propuestas").html(code);
+          });
+        }
       }
     },
     'single-candidatos': {

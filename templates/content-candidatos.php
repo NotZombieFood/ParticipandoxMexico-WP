@@ -17,8 +17,25 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Propuestas</h2>
-                    <?php echo get_field("propuestas");?>
+                </div>
+                 <div class="col-md-12 center">
+                    <button class="boton-candidato" id="economia">Economía</button>
+                    <button class="boton-candidato" id="educacion">Educación</button>
+                    <button class="boton-candidato" id="internacional">Internacional</button>
+                    <button class="boton-candidato" id="salud">Salud</button>
+                    <button class="boton-candidato" id="seguridad">Seguridad</button>
+                    <button class="boton-candidato" id="ecologia">Ecología</button>
+                </div>
+                <div id="propuestas" class="col-md-12">
+                    
                 </div>
             </div>
         </div>
  </section>
+<div style="display: none;">
+<?php if(have_rows('propuestas_rep')):
+   while(have_rows('propuestas_rep')): the_row(); ?>
+    <div class="objetos" data-propuesta="<?php the_sub_field("propuesta_texto");?>" data-categoria="<?php the_sub_field("propuesta_categoria"); ?>"> </div>
+<?php endwhile; ?>
+<?php endif; ?>
+</div>
