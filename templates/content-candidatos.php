@@ -18,7 +18,7 @@
                 <div class="col-md-12">
                     <h2>Propuestas</h2>
                 </div>
-                 <div class="col-md-12 center">
+                 <div id="botones" class="col-md-12 center">
                     <button class="boton-candidato" id="economia">Economía</button>
                     <button class="boton-candidato" id="educacion">Educación</button>
                     <button class="boton-candidato" id="internacional">Internacional</button>

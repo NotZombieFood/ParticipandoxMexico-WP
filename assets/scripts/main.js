@@ -204,6 +204,7 @@
           });
         }
         var Data = [];
+        var categoriaArray = [];
         function getData() {
           console.log('running...');
           $('.objetos').each(function(i, obj) {
@@ -211,10 +212,19 @@
             var propuesta = $(this).data("propuesta");
             var subarray = [propuesta, categoria];
             Data.push(subarray);
+            categoriaArray.push(categoria);
           });
         }
         if ($('#perfil').length) {
           getData();
+          var uniqueNames = [];
+          $.each(categoriaArray, function(i, el){
+              if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
+          });
+          for (var i = 0; i < uniqueNames.length; i++) {
+                code_btn += "<button class='boton-candidato' id='" + uniqueNames[i] + "'>"+ uniqueNames[i] + "</button>";         
+          }
+          $("#botones").html(code_btn);
           $('.boton-candidato').on('click', function() {
             var categoriaBTN = $(this).attr("id");
             var code = "";
