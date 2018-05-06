@@ -14,6 +14,9 @@
     <li>
       <a href="<?php echo get_site_url(); ?>/mapa">Mapa Colectivos y ACs</a>
     </li>
+    <li>
+      <a href="<?php echo get_site_url(); ?>/quiz-politico">Quiz Político</a>
+    </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tuitea para ayudar

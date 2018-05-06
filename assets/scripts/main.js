@@ -34,6 +34,70 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
+    'resultados': {
+      init: function() {
+        console.log("respuestas quiz");
+
+        function getQueryVariable(variable) {
+          var query = window.location.search.substring(1);
+          var vars = query.split("&");
+          for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] === variable) { return pair[1] }
+          }
+          return (NaN);
+        }
+
+        function setBarValue(name, value) {
+          innerel = document.getElementById(name);
+          outerel = document.getElementById("bar-" + name);
+          outerel.style.width = (value + "%");
+          innerel.innerHTML = (value + "%");
+        }
+
+        econArray = ["Comunista", "Socialista", "Social", "Centralista", "Mercado", "Capitalista", "Laissez-Faire"];
+        diplArray = ["Cosmopolitan", "Internacionalista", "Pacífico", "Balanceado", "Patriota", "Nacionalista", "Chauvinista"];
+        govtArray = ["Anarquista", "Libertino", "Liberal", "Moderado", "Estado", "Autoritario", "Totalitario"];
+        sctyArray = ["Revolucionario", "Muy progresivo", "Progresivo", "Neutral", "Tradicional", "Muy tradicional", "Reaccionario"];
+
+        function setLabel(val, ary) {
+          if (val > 100) { return "" } else
+          if (val > 90) { return ary[0] } else
+          if (val > 75) { return ary[1] } else
+          if (val > 60) { return ary[2] } else
+          if (val >= 40) { return ary[3] } else
+          if (val >= 25) { return ary[4] } else
+          if (val >= 10) { return ary[5] } else
+          if (val >= 0) { return ary[6] } else { return "" }
+        }
+
+        equality = getQueryVariable("e");
+        peace = getQueryVariable("d");
+        liberty = getQueryVariable("g");
+        progress = getQueryVariable("s");
+        wealth = (100 - equality).toFixed(1);
+        might = (100 - peace).toFixed(1);
+        authority = (100 - liberty).toFixed(1);
+        tradition = (100 - progress).toFixed(1);
+
+        setBarValue("equality", equality);
+        setBarValue("wealth", wealth);
+        setBarValue("peace", peace);
+        setBarValue("might", might);
+        setBarValue("liberty", liberty);
+        setBarValue("authority", authority);
+        setBarValue("progress", progress);
+        setBarValue("tradition", tradition);
+
+        document.getElementById("economic-label").innerHTML = setLabel(equality, econArray);
+        document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray);
+        document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray);
+        document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray);
+      },
+      finalize: function() {
+        // JavaScript to be fired on all pages, after page specific JS is fired
+      }
+    },
     'home': {
       init: function() {
         var Data = [];
@@ -66,12 +130,12 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
-    'quizQuestions': {
+    'preguntas': {
       init: function() {
         console.log("preguntas");
         $(document).keydown(function(e) {
 
-          switch (e.keyCodeke) {
+          switch (e.keyCode) {
             case 53:
               jQuery('#response5').get(0).click();
               break;
@@ -732,7 +796,7 @@
 
         function init_question() {
           $("#question-text").html(questions[qn].question);
-          $("#question-number").html("Question " + (qn + 1) + " of " + (questions.length));
+          $("#question-number").html("Pregunta " + (qn + 1) + " de " + (questions.length));
           if (prev_answer == null) {
             $("#back_button").css('display', 'none');
             $("#back_button_off").css('display', 'block');
@@ -760,7 +824,7 @@
           var calc_score_dipl = calc_score(dipl, max_dipl);
           var calc_score_govt = calc_score(govt, max_govt);
           var calc_score_scty = calc_score(scty, max_scty);
-          var url = 'https://mapa.southcentralus.cloudapp.azure.com/resultados.html?e=' + calc_score_econ + "&d=" + calc_score_dipl + "&g=" + calc_score_govt + "&s=" + calc_score_scty;
+          var url = 'https://mapa.southcentralus.cloudapp.azure.com/resultados?e=' + calc_score_econ + "&d=" + calc_score_dipl + "&g=" + calc_score_govt + "&s=" + calc_score_scty;
           window.location.href = url;
         }
 
@@ -791,7 +855,25 @@
           init_question();
 
         }
-
+        $("#response5").click(function(event) {
+          next_question(1.0);
+        });
+        $("#response4").click(function(event) {
+          next_question(0.5);
+        });
+        $("#response3").click(function(event) {
+          next_question(0);
+        });
+        $("#response2").click(function(event) {
+          next_question(-0.5);
+        });
+        $("#response1").click(function(event) {
+          next_question(-1);
+        });
+        $(".small_button").click(function(event) {
+          prev_question();
+        });
+        $("footer").remove();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

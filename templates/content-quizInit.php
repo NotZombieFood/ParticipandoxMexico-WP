@@ -5,7 +5,8 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-10 col-md-offset-1 center">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 center">
             <h2>¿Cómo funciona?</h2>
             <p>Basado en el trabajo de <a href="https://github.com/8values/8values.github.io">8values</a> podemos asignar porcentajes a 8 distintos valores políticos con respuestas que van en la escala de <b>Totalmente en acuerdo</b> a <b>Totalmente en desacuerdo</b>, cada repuesta nos ayudará a encontrar una corriente política y a mostrarte que propuestas presidenciales te pueden llamar más la atención en cada ámbito.</p>
 
@@ -28,7 +29,7 @@
     <p class="value-description"><b style="color:#7b1fa2;">Progreso</b> (Sociedad)<br/>
         Aquellos con puntajes de Progreso más altos creen en el cambio social y la racionalidad. Aunque no siempre, generalmente son seculares o ateos, y apoyan la acción ambiental y la investigación científica o tecnológica.</p>
         <div style="text-align: center; width: 100%;">
-            <button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">¡Comenzar!</button>
+            <button class="button" onclick="location.href='https://mapa.southcentralus.cloudapp.azure.com/preguntas/';" style="font-size:36pt;">¡Comenzar!</button>
             </div>
         </div>
     </div>
