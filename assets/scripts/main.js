@@ -74,7 +74,7 @@
         equality = getQueryVariable("e");
         peace = getQueryVariable("d");
         liberty = getQueryVariable("g");
-        progress = getQueryVariable("s");
+        progress = getQueryVariable("social");
         wealth = (100 - equality).toFixed(1);
         might = (100 - peace).toFixed(1);
         authority = (100 - liberty).toFixed(1);
@@ -824,7 +824,7 @@
           var calc_score_dipl = calc_score(dipl, max_dipl);
           var calc_score_govt = calc_score(govt, max_govt);
           var calc_score_scty = calc_score(scty, max_scty);
-          var url = 'https://mapa.southcentralus.cloudapp.azure.com/resultados?e=' + calc_score_econ + "&d=" + calc_score_dipl + "&g=" + calc_score_govt + "&s=" + calc_score_scty;
+          var url = 'https://mapa.southcentralus.cloudapp.azure.com/resultados?e=' + calc_score_econ + "&d=" + calc_score_dipl + "&g=" + calc_score_govt + "&social=" + calc_score_scty;
           window.location.href = url;
         }
 
